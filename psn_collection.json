@@ -1,0 +1,89 @@
+{
+    "info": {
+        "_postman_id": "d3f4c1ab-67a1-4cd6-9c74-efb50bc54802",
+        "name": "PSN Simple API",
+        "description": "API endpoints for authenticating and getting games list and trophies using PSNAWP.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Authenticate",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"npsso_code\": \"<your_npsso_code>\"}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:5000/api/authenticate",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "authenticate"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Playing Games List",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/api/registered_devices",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "registered_devices"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Trophies",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:5000/api/trophies/NPWR22810_00",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "trophies",
+                        "NPWR22810_00"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

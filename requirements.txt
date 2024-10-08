@@ -1,0 +1,4 @@
+PSNAWP
+flask
+flask-cors
+psycopg2
