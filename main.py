@@ -2,7 +2,7 @@ from psn_functions import *
 
 
 def main():
-    npsso_code = "S51MeVPWBz7JR3GB3I11d0tigPj641D8UQzN11au4nMloRYvDVUTc7Y4YjcHSI1T"
+    npsso_code = ""
     psnawp = initialize_psnawp(npsso_code)
 
     # Fetch and display personal account info
